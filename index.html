@@ -1,284 +1,257 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ufuk Akkaya | Electrical & Electronics Engineering</title>
+    <title>Ufuk Akkaya | CV</title>
     <style>
         :root {
-            --primary-color: #0f4c81; 
+            --primary-color: #001f3f; /* Deep Navy */
+            --accent-color: #0074D9;
             --text-color: #333;
-            --light-bg: #f8f9fa;
-            --border-color: #e9ecef;
-        }
-        
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: #eaeff2;
-            margin: 0;
-            padding: 20px;
+            --light-grey: #f4f4f4;
         }
 
-        .container {
-            max-width: 900px;
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: #fff;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .cv-container {
+            max-width: 850px;
             margin: 0 auto;
-            background: #ffffff;
-            padding: 50px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
         header {
-            text-align: center;
-            border-bottom: 3px solid var(--primary-color);
-            padding-bottom: 25px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
             margin-bottom: 30px;
         }
 
         h1 {
             margin: 0;
+            font-size: 32pt;
             color: var(--primary-color);
-            font-size: 2.8em;
-            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         .contact-info {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 15px;
-            font-size: 1em;
-            color: #555;
+            gap: 15px;
+            margin-top: 10px;
+            font-size: 10pt;
         }
 
-        .contact-info a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
+        .contact-info span {
+            color: var(--accent-color);
         }
 
         h2 {
+            font-size: 18pt;
             color: var(--primary-color);
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 8px;
-            margin-top: 35px;
-            font-size: 1.4em;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            border-bottom: 1px solid #ddd;
+            margin-top: 30px;
+            margin-bottom: 15px;
         }
 
-        p {
-            margin: 10px 0;
+        .summary-text {
+            font-style: italic;
             text-align: justify;
         }
 
-        .item {
-            margin-bottom: 25px;
+        .section-item {
+            margin-bottom: 20px;
         }
 
         .item-header {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 12pt;
         }
 
-        .item-title {
-            font-weight: 600;
-            font-size: 1.15em;
-            color: #222;
-        }
-
-        .item-subtitle {
+        .item-subheader {
             font-style: italic;
-            color: #666;
-            font-size: 0.95em;
-        }
-
-        .item-date {
-            font-weight: 500;
-            color: var(--primary-color);
-            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 5px;
         }
 
         ul {
-            margin: 8px 0 15px 20px;
-            padding: 0;
+            margin-top: 5px;
+            padding-left: 20px;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             text-align: justify;
         }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 12px;
-        }
-
-        .skill-category {
-            background: var(--light-bg);
-            padding: 15px;
-            border-radius: 6px;
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .skill-category strong {
-            display: block;
-            margin-bottom: 5px;
-            color: var(--primary-color);
-        }
-
-        .references-grid {
+        .skills-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
 
-        .reference-card {
-            background: var(--light-bg);
-            padding: 15px;
-            border-radius: 6px;
+        .skill-group strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .reference-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .ref-item div {
+            font-size: 10pt;
         }
 
         @media (max-width: 600px) {
-            .container { padding: 25px; }
+            body { padding: 20px; }
             .item-header { flex-direction: column; }
-            .references-grid { grid-template-columns: 1fr; }
+            .skills-container, .reference-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="cv-container">
     <header>
-        <h1>UFUK AKKAYA</h1>
+        <h1>Ufuk Akkaya</h1>
         <div class="contact-info">
             <span>📞 +90 (507) 148 48 66</span>
-            <span>✉️ <a href="mailto:tufukkaya@gmail.com">tufukkaya@gmail.com</a></span>
-            <span>📍 Konya, Türkiye</span>
+            <span>✉️ tufukkaya@gmail.com</span>
+            <span>📍 Konya, Turkey</span>
         </div>
     </header>
 
     <section>
-        <h2>Özet (Summary)</h2>
-        <p>Necmettin Erbakan Üniversitesi Elektrik-Elektronik Mühendisliği 3. sınıf öğrencisi; Gömülü Sistemler, Mikrodenetleyici Programlama (STM32) ve Gelişmiş PCB Tasarımı konularında uzmanlaşmaktadır. Çeşitli haberleşme protokollerini (I2C, SPI, UART, CAN) uygulama ve çok kanallı ADC'ler aracılığıyla sensör entegrasyonu konusunda yetkindir. Bileşen footprint ve şematik tasarımından gömülü C programlamaya ve çift yönlü Python arayüzlerine kadar kapsamlı donanım ve yazılım çözümleri sunma deneyimine sahiptir. Yüksek güvenilirlikli uygulamalar için sistem optimizasyonu ve hassas ölçüm konularına tutkuyla bağlıdır.</p>
+        <h2>Summary</h2>
+        <p class="summary-text">
+            A dedicated 3rd-year Electrical and Electronics Engineering student at Necmettin Erbakan University, specializing in Embedded Systems, Microcontroller Programming (STM32), and Advanced PCB Design[cite: 5]. Proficient in implementing various communication protocols (I2C, SPI, UART, CAN) and integrating sensors via multi-channel ADCs[cite: 6]. Experienced in delivering comprehensive hardware and software solutions, from component footprinting and schematic design to embedded C programming and bidirectional Python interfaces[cite: 7]. Passionate about system optimization and precision measurement for high-reliability applications[cite: 8].
+        </p>
     </section>
 
     <section>
-        <h2>Eğitim (Education)</h2>
-        <div class="item">
+        <h2>Education</h2>
+        <div class="section-item">
             <div class="item-header">
-                <span class="item-title">Necmettin Erbakan Üniversitesi</span>
-                <span class="item-date">2023 – Günümüz</span>
+                <span>Necmettin Erbakan University</span>
+                <span>2023 – Present</span>
             </div>
-            <div class="item-subtitle">Elektrik-Elektronik Mühendisliği (Lisans, 3. Sınıf)</div>
-            <p><strong>Temel Dersler:</strong> Sinyaller ve Sistemler, Elektromanyetik Dalga Teorisi, Güç Elektroniği, Sayısal Mantık Tasarımı, Kompleks Analiz, AC/DC Devre Analizi, Elektrik Makineleri.</p>
+            <div class="item-subheader">B.S. in Electrical and Electronics Engineering (3rd Year) [cite: 11]</div>
+            <p><strong>Core Coursework:</strong> Signals and Systems, Electromagnetic Wave Theory, Power Electronics, Digital Logic Design, Complex Analysis, AC/DC Circuit Analysis, Electrical Machines[cite: 13].</p>
         </div>
     </section>
 
     <section>
-        <h2>Projeler & Mühendislik Deneyimi</h2>
+        <h2>Projects & Engineering Experience</h2>
         
-        <div class="item">
-            <div class="item-title">Real-Time Hand Gesture Recognition and VFX Rendering System</div>
-            <div class="item-subtitle">Python, OpenCV, Media Pipe</div>
+        <div class="section-item">
+            <div class="item-header">Real-Time Hand Gesture Recognition and VFX Rendering System</div>
+            <div class="item-subheader">Python, OpenCV, Media Pipe</div>
             <ul>
-                <li>Gelişmiş 3D el takibi ve koordinat çıkarımı için MediaPipe kütüphanesini kullanan gerçek zamanlı bir bilgisayarlı görü arayüzü geliştirildi.</li>
-                <li>Belirli dinamik el hareketlerine göre olayları algılamak ve tetiklemek için ardışıl bir "State Machine" algoritması tasarlandı.</li>
-                <li>Çeşitli çözünürlüklerde donanım kaynaklı görüntü bozulmalarını önlemek için dinamik bir pillarboxing sistemi mühendisliği yapıldı.</li>
-                <li>Yüksek çözünürlüklü VFX katmanlarını CPU darboğazı oluşturmadan canlı kamera akışına entegre etmek için Alpha Blending ve gerçek zamanlı matris dönüşümleri uygulandı.</li>
+                <li>Developed a real-time computer vision interface utilizing the MediaPipe library for advanced 3D hand-tracking and coordinate extraction[cite: 16].</li>
+                <li>Designed a sequential "State Machine" algorithm to accurately detect and trigger events based on specific dynamic hand gestures[cite: 17].</li>
+                <li>Engineered a dynamic pillarboxing system to eliminate hardware-induced image distortion and stretching across various resolutions[cite: 18].</li>
+                <li>Implemented Alpha Blending and real-time matrix transformations to seamlessly integrate high-resolution VFX overlays into the live camera feed[cite: 19].</li>
             </ul>
         </div>
 
-        <div class="item">
-            <div class="item-title">Precision Noise Measurement Module</div>
-            <div class="item-subtitle">STM32, ADS1115 ADC, Python</div>
+        <div class="section-item">
+            <div class="item-header">Precision Noise Measurement Module</div>
+            <div class="item-subheader">STM32, ADS1115 ADC, Python</div>
             <ul>
-                <li>Prof. Dr. Mehmet Akif Erişmiş danışmanlığında yüksek doğruluklu akustik veri toplama için bir donanım modülü geliştirildi.</li>
-                <li>Hassas analog-dijital sinyal dönüşümü sağlamak için harici bir ADS1115 16-bit ADC, I2C protokolü üzerinden STM32 mikrodenetleyicisi ile başarıyla arayüzlendi.</li>
-                <li>Toplanan gerçek zamanlı gürültü metriklerini işlemek, analiz etmek ve görselleştirmek için Python'da özel bir masaüstü yazılım arayüzü programlandı.</li>
+                <li>Developed a hardware module for high-fidelity acoustic data acquisition under the supervision of Prof. Dr. Mehmet Akif Erişmiş[cite: 21].</li>
+                <li>Successfully interfaced an external ADS1115 16-bit ADC with the STM32 microcontroller via I2C protocol[cite: 22].</li>
+                <li>Programmed a customized desktop software interface in Python to process and visualize real-time noise metrics[cite: 23].</li>
             </ul>
         </div>
 
-        <div class="item">
-            <div class="item-title">Wireless Security Detector System</div>
-            <div class="item-subtitle">Altium Designer, STM32, ESP32</div>
+        <div class="section-item">
+            <div class="item-header">Wireless Security Detector System</div>
+            <div class="item-subheader">Altium Designer, STM32, ESP32</div>
             <ul>
-                <li>STM32 mikrodenetleyici ve ESP32 modülünü entegre eden kapsamlı bir kablosuz güvenlik yükü (payload) tasarlandı.</li>
-                <li>Sinyal bütünlüğü, bileşen footprintleri ve 3D modellemeye odaklanarak Altium Designer kullanılarak çok katmanlı baskı devre kartı (PCB) tasarlandı.</li>
-                <li>Donanım bileşenleri arasında sorunsuz iletişim ve hızlı yanıt süreleri sağlamak için gömülü C firmware geliştirildi.</li>
+                <li>Engineered a comprehensive wireless security payload integrating an STM32 microcontroller and an ESP32 module[cite: 25].</li>
+                <li>Designed the multi-layer printed circuit board (PCB) using Altium Designer, focusing on signal integrity and 3D modeling[cite: 26].</li>
+                <li>Developed embedded C firmware to ensure seamless communication and rapid response times between hardware components[cite: 27].</li>
             </ul>
         </div>
 
-        <div class="item">
-            <div class="item-title">Digital Scoreboard Architecture</div>
-            <div class="item-subtitle">STM32, DMA, Interrupts, Timers</div>
+        <div class="section-item">
+            <div class="item-header">Digital Scoreboard Architecture</div>
+            <div class="item-subheader">STM32, DMA, Interrupts, Timers</div>
             <ul>
-                <li>Hassas zaman yönetimi ve durum takibine odaklanan dijital bir skorboard sistemi tasarlandı.</li>
-                <li>STM32CubeIDE'de Doğrudan Bellek Erişimi (DMA), donanım zamanlayıcıları (Timers) ve gelişmiş kesme (Interrupt) yönetimi kullanılarak mikrodenetleyici performansı optimize edildi.</li>
+                <li>Designed a digital scoreboard system focused on precise time management and state tracking[cite: 29].</li>
+                <li>Optimized microcontroller performance by leveraging Direct Memory Access (DMA) and hardware Timers[cite: 30].</li>
             </ul>
         </div>
 
-        <div class="item">
-            <div class="item-title">Özel PCB Tasarım Portfolyosu</div>
-            <div class="item-subtitle">KiCad, Altium, Güç Elektroniği</div>
+        <div class="section-item">
+            <div class="item-header">Custom PCB Design Portfolio</div>
+            <div class="item-subheader">KiCad, Altium, Power Electronics</div>
             <ul>
-                <li><strong>IoT Hava Kalitesi Sistemi:</strong> Çevresel izleme modülü için şematik ve PCB layout tasarımı yapıldı.</li>
-                <li><strong>Güç Yönetimi Çözümleri:</strong> Verimli voltaj regülasyonu için 9V-3.3V Step-Down Power Shield ve LMF317 Regüli Güç Kaynağı tasarlandı.</li>
-                <li><strong>Analog Termostat:</strong> Devre analizi ve ölçüm teknikleri entegre edilerek sağlam bir analog kontrol kartı geliştirildi.</li>
+                <li><strong>IoT Air Quality System:</strong> Designed the schematic and PCB layout for an environmental monitoring module[cite: 32].</li>
+                <li><strong>Power Management:</strong> Engineered a 9V-to-3.3V Step-Down Power Shield and an LMF317 Regulated Power Supply[cite: 33].</li>
+                <li><strong>Analog Thermostat:</strong> Developed a robust analog control board integrating circuit analysis techniques[cite: 34].</li>
             </ul>
         </div>
     </section>
 
     <section>
-        <h2>Teknik Yetenekler</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <strong>Gömülü Sistemler & Firmware:</strong> STM32, ARM Cortex-M, ESP32, C (Embedded), DMA, Interrupt-Driven Design, Multi-channel ADC
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-group">
+                <strong>Embedded Systems & Firmware</strong>
+                STM32, ARM Cortex-M, ESP32, Embedded C, DMA, Interrupt-Driven Design, Multi-channel ADC[cite: 36].
             </div>
-            <div class="skill-category">
-                <strong>Protokoller & Arayüzler:</strong> I2C, SPI, UART, CAN Bus, Çift Yönlü Seri Haberleşme
+            <div class="skill-group">
+                <strong>Hardware & PCB Design</strong>
+                Altium Designer, KiCad, LTspice, PCB Toolkit, Footprinting, 3D Modeling, Soldering[cite: 38].
             </div>
-            <div class="skill-category">
-                <strong>Donanım & PCB Tasarımı:</strong> Altium Designer, KiCad, LTspice, PCB Toolkit, Component Footprinting, 3D Modelleme, Prototipleme, Lehimleme
+            <div class="skill-group">
+                <strong>Protocols & Software</strong>
+                I2C, SPI, UART, CAN Bus, Python, MATLAB, STM32CubeIDE[cite: 37, 40].
             </div>
-            <div class="skill-category">
-                <strong>Yazılım & Diller:</strong> Python, MATLAB, C, STM32CubeIDE | İngilizce (C1 Advanced), Türkçe (Anadil)
+            <div class="skill-group">
+                <strong>Languages</strong>
+                English (C1 Advanced), Turkish (Native)[cite: 41].
             </div>
         </div>
     </section>
 
     <section>
-        <h2>Sertifikalar & Eğitimler</h2>
+        <h2>Certifications</h2>
         <ul>
-            <li><strong>Elektronik Kartın Yaşam Döngüsü:</strong> Mustafa Berk Aydoğan (Bowtie) tarafından verilen uçtan uca donanım geliştirme eğitimi.</li>
-            <li><strong>Python Programlama (40+ Saat):</strong> Sıfırdan İleri Seviyeye geliştirme teknikleri (Udemy).</li>
+            <li>The Life Cycle of an Electronic Card (Mustafa Berk Aydoğan)[cite: 43].</li>
+            <li>Python Programming: Zero to Advanced (40+ Hours)[cite: 44].</li>
         </ul>
     </section>
 
     <section>
-        <h2>Referanslar</h2>
-        <div class="references-grid">
-            <div class="reference-card">
-                <div class="item-title">Prof. Dr. Mehmet Akif Erişmiş</div>
-                <div class="item-subtitle">Proje Danışmanı - Elektrik-Elektronik Mühendisliği</div>
-                <div>Necmettin Erbakan Üniversitesi</div>
-                <a href="mailto:maerismis@erbakan.edu.tr">maerismis@erbakan.edu.tr</a>
+        <h2>References</h2>
+        <div class="reference-grid">
+            <div class="ref-item">
+                <strong>Prof. Dr. Mehmet Akif Erişmiş</strong>
+                <div>Project Advisor, NEÜ</div>
+                <div>maerismis@erbakan.edu.tr [cite: 50]</div>
             </div>
-            <div class="reference-card">
-                <div class="item-title">Dr. Öğr. Üyesi Sinan Yiğit</div>
-                <div class="item-subtitle">Öğretim Üyesi - Elektrik-Elektronik Mühendisliği</div>
-                <div>Necmettin Erbakan Üniversitesi</div>
-                <a href="mailto:sinan.yigit@erbakan.edu.tr">sinan.yigit@erbakan.edu.tr</a>
+            <div class="ref-item">
+                <strong>Dr. Öğr. Üyesi Sinan Yiğit</strong>
+                <div>Faculty Member, NEÜ</div>
+                <div>sinan.yigit@erbakan.edu.tr [cite: 51]</div>
             </div>
         </div>
     </section>
-
 </div>
 
 </body>
