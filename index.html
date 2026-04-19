@@ -48,8 +48,13 @@
             font-size: 10pt;
         }
 
-        .contact-info span {
+        .contact-info a {
             color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
         h2 {
@@ -129,15 +134,16 @@
         <h1>Ufuk Akkaya</h1>
         <div class="contact-info">
             <span>📞 +90 (507) 148 48 66</span>
-            <span>✉️ tufukkaya@gmail.com</span>
-            <span>📍 Konya, Turkey</span>
+            <span>✉️ <a href="mailto:tufukkaya@gmail.com">tufukkaya@gmail.com</a></span>
+            <span>🔗 <a href="https://linkedin.com/in/ufuk-akkaya-537546294" target="_blank">LinkedIn</a></span>
+            <span>💻 <a href="https://github.com/Ufukakkaya4" target="_blank">GitHub</a></span>
         </div>
     </header>
 
     <section>
         <h2>Summary</h2>
         <p class="summary-text">
-            A dedicated 3rd-year Electrical and Electronics Engineering student at Necmettin Erbakan University, specializing in Embedded Systems, Microcontroller Programming (STM32), and Advanced PCB Design[cite: 5]. Proficient in implementing various communication protocols (I2C, SPI, UART, CAN) and integrating sensors via multi-channel ADCs[cite: 6]. Experienced in delivering comprehensive hardware and software solutions, from component footprinting and schematic design to embedded C programming and bidirectional Python interfaces[cite: 7]. Passionate about system optimization and precision measurement for high-reliability applications[cite: 8].
+            A dedicated 3rd-year Electrical and Electronics Engineering student at Necmettin Erbakan University, specializing in Embedded Systems, Microcontroller Programming (STM32), and Advanced PCB Design. Proficient in implementing various communication protocols (I2C, SPI, UART, CAN) and integrating sensors via multi-channel ADCs. Experienced in delivering comprehensive hardware and software solutions, from component footprinting and schematic design to embedded C programming and bidirectional Python interfaces. Passionate about system optimization and precision measurement for high-reliability applications.
         </p>
     </section>
 
@@ -148,8 +154,8 @@
                 <span>Necmettin Erbakan University</span>
                 <span>2023 – Present</span>
             </div>
-            <div class="item-subheader">B.S. in Electrical and Electronics Engineering (3rd Year) [cite: 11]</div>
-            <p><strong>Core Coursework:</strong> Signals and Systems, Electromagnetic Wave Theory, Power Electronics, Digital Logic Design, Complex Analysis, AC/DC Circuit Analysis, Electrical Machines[cite: 13].</p>
+            <div class="item-subheader">B.S. in Electrical and Electronics Engineering (3rd Year)</div>
+            <p><strong>Core Coursework:</strong> Signals and Systems, Electromagnetic Wave Theory, Power Electronics, Digital Logic Design, Complex Analysis, AC/DC Circuit Analysis, Electrical Machines.</p>
         </div>
     </section>
 
@@ -160,10 +166,10 @@
             <div class="item-header">Real-Time Hand Gesture Recognition and VFX Rendering System</div>
             <div class="item-subheader">Python, OpenCV, Media Pipe</div>
             <ul>
-                <li>Developed a real-time computer vision interface utilizing the MediaPipe library for advanced 3D hand-tracking and coordinate extraction[cite: 16].</li>
-                <li>Designed a sequential "State Machine" algorithm to accurately detect and trigger events based on specific dynamic hand gestures[cite: 17].</li>
-                <li>Engineered a dynamic pillarboxing system to eliminate hardware-induced image distortion and stretching across various resolutions[cite: 18].</li>
-                <li>Implemented Alpha Blending and real-time matrix transformations to seamlessly integrate high-resolution VFX overlays into the live camera feed[cite: 19].</li>
+                <li>Developed a real-time computer vision interface utilizing the MediaPipe library for advanced 3D hand-tracking and coordinate extraction.</li>
+                <li>Designed a sequential "State Machine" algorithm to accurately detect and trigger events based on specific dynamic hand gestures.</li>
+                <li>Engineered a dynamic pillarboxing system to eliminate hardware-induced image distortion and stretching across various resolutions.</li>
+                <li>Implemented Alpha Blending and real-time matrix transformations to seamlessly integrate high-resolution VFX overlays into the live camera feed without CPU bottlenecking.</li>
             </ul>
         </div>
 
@@ -171,19 +177,9 @@
             <div class="item-header">Precision Noise Measurement Module</div>
             <div class="item-subheader">STM32, ADS1115 ADC, Python</div>
             <ul>
-                <li>Developed a hardware module for high-fidelity acoustic data acquisition under the supervision of Prof. Dr. Mehmet Akif Erişmiş[cite: 21].</li>
-                <li>Successfully interfaced an external ADS1115 16-bit ADC with the STM32 microcontroller via I2C protocol[cite: 22].</li>
-                <li>Programmed a customized desktop software interface in Python to process and visualize real-time noise metrics[cite: 23].</li>
-            </ul>
-        </div>
-
-        <div class="section-item">
-            <div class="item-header">Wireless Security Detector System</div>
-            <div class="item-subheader">Altium Designer, STM32, ESP32</div>
-            <ul>
-                <li>Engineered a comprehensive wireless security payload integrating an STM32 microcontroller and an ESP32 module[cite: 25].</li>
-                <li>Designed the multi-layer printed circuit board (PCB) using Altium Designer, focusing on signal integrity and 3D modeling[cite: 26].</li>
-                <li>Developed embedded C firmware to ensure seamless communication and rapid response times between hardware components[cite: 27].</li>
+                <li>Developed a hardware module for high-fidelity acoustic data acquisition under the supervision of Prof. Dr. Mehmet Akif Erişmiş.</li>
+                <li>Successfully interfaced an external ADS1115 16-bit ADC with the STM32 microcontroller via I2C protocol to achieve precise analog-to-digital signal conversion.</li>
+                <li>Programmed a customized desktop software interface in Python to process, analyze, and visualize the acquired real-time noise metrics.</li>
             </ul>
         </div>
 
@@ -191,8 +187,8 @@
             <div class="item-header">Digital Scoreboard Architecture</div>
             <div class="item-subheader">STM32, DMA, Interrupts, Timers</div>
             <ul>
-                <li>Designed a digital scoreboard system focused on precise time management and state tracking[cite: 29].</li>
-                <li>Optimized microcontroller performance by leveraging Direct Memory Access (DMA) and hardware Timers[cite: 30].</li>
+                <li>Designed a digital scoreboard system focused on precise time management and state tracking.</li>
+                <li>Optimized microcontroller performance by leveraging Direct Memory Access (DMA), hardware Timers, and advanced Interrupt handling in STM32CubeIDE.</li>
             </ul>
         </div>
 
@@ -200,9 +196,10 @@
             <div class="item-header">Custom PCB Design Portfolio</div>
             <div class="item-subheader">KiCad, Altium, Power Electronics</div>
             <ul>
-                <li><strong>IoT Air Quality System:</strong> Designed the schematic and PCB layout for an environmental monitoring module[cite: 32].</li>
-                <li><strong>Power Management:</strong> Engineered a 9V-to-3.3V Step-Down Power Shield and an LMF317 Regulated Power Supply[cite: 33].</li>
-                <li><strong>Analog Thermostat:</strong> Developed a robust analog control board integrating circuit analysis techniques[cite: 34].</li>
+                <li><strong>H-Bridge Motor Driver:</strong> Designing a custom motor driver board in Altium Designer utilizing IR2104 and IRF3205 components alongside an STM32G030 microcontroller.</li>
+                <li><strong>IoT Air Quality System:</strong> Designed the schematic and PCB layout for an environmental monitoring module.</li>
+                <li><strong>Power Management Solutions:</strong> Engineered a 9V-to-3.3V Step-Down Power Shield and an LMF317 Regulated Power Supply, applying power electronics principles for efficient voltage regulation.</li>
+                <li><strong>Analog Thermostat:</strong> Developed a robust analog control board, integrating circuit analysis and measurement techniques.</li>
             </ul>
         </div>
     </section>
@@ -212,28 +209,28 @@
         <div class="skills-container">
             <div class="skill-group">
                 <strong>Embedded Systems & Firmware</strong>
-                STM32, ARM Cortex-M, ESP32, Embedded C, DMA, Interrupt-Driven Design, Multi-channel ADC[cite: 36].
+                STM32 Microcontrollers, ARM Cortex-M, ESP32, C (Embedded), DMA, Interrupt-Driven Design, Multi-channel ADC.
             </div>
             <div class="skill-group">
                 <strong>Hardware & PCB Design</strong>
-                Altium Designer, KiCad, LTspice, PCB Toolkit, Footprinting, 3D Modeling, Soldering[cite: 38].
+                Altium Designer, KiCad, LTspice, PCB Toolkit, Component Footprinting, 3D Modeling, Prototyping, Soldering.
             </div>
             <div class="skill-group">
                 <strong>Protocols & Software</strong>
-                I2C, SPI, UART, CAN Bus, Python, MATLAB, STM32CubeIDE[cite: 37, 40].
+                I2C, SPI, UART, CAN Bus, Bi-directional Serial Communication, Python, MATLAB, STM32CubeIDE.
             </div>
             <div class="skill-group">
                 <strong>Languages</strong>
-                English (C1 Advanced), Turkish (Native)[cite: 41].
+                English (C1 - Advanced), Turkish (Native).
             </div>
         </div>
     </section>
 
     <section>
-        <h2>Certifications</h2>
+        <h2>Certifications & Training</h2>
         <ul>
-            <li>The Life Cycle of an Electronic Card (Mustafa Berk Aydoğan)[cite: 43].</li>
-            <li>Python Programming: Zero to Advanced (40+ Hours)[cite: 44].</li>
+            <li><strong>The Life Cycle of an Electronic Card:</strong> Comprehensive training on end-to-end hardware development by Mustafa Berk Aydoğan (Bowtie).</li>
+            <li><strong>Python Programming (40+ Hours):</strong> Zero to Advanced development techniques (Udemy).</li>
         </ul>
     </section>
 
@@ -242,13 +239,15 @@
         <div class="reference-grid">
             <div class="ref-item">
                 <strong>Prof. Dr. Mehmet Akif Erişmiş</strong>
-                <div>Project Advisor, NEÜ</div>
-                <div>maerismis@erbakan.edu.tr [cite: 50]</div>
+                <div>Project Advisor - Electrical and Electronics Engineering</div>
+                <div>Necmettin Erbakan University</div>
+                <a href="mailto:maerismis@erbakan.edu.tr" style="color: var(--accent-color); text-decoration: none;">maerismis@erbakan.edu.tr</a>
             </div>
             <div class="ref-item">
                 <strong>Dr. Öğr. Üyesi Sinan Yiğit</strong>
-                <div>Faculty Member, NEÜ</div>
-                <div>sinan.yigit@erbakan.edu.tr [cite: 51]</div>
+                <div>Faculty Member - Electrical and Electronics Engineering</div>
+                <div>Necmettin Erbakan University</div>
+                <a href="mailto:sinan.yigit@erbakan.edu.tr" style="color: var(--accent-color); text-decoration: none;">sinan.yigit@erbakan.edu.tr</a>
             </div>
         </div>
     </section>
